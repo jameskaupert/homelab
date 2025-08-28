@@ -1,5 +1,6 @@
 [tools]
 curl = "latest"
+k9s = "latest"
 
 [env]
 _.file = ".envrc"
