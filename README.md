@@ -1,16 +1,15 @@
-# devpod-template
+# homelab
 
-Opinionated devpod setup leveraging mise for runtime management. Assumes use of CLI IDE like Neovim, but can use others with devpod config changes like `--ide vscode`.
+## DevPods Devcontainer Setup
+I manage updates from within a devcontainer based on [devpod.sh](https://devpod.sh). Example setup below assumes you want to use something like Neovim from the CLI.
 
-# Setup
 1. Install [DevPod CLI](https://devpod.sh/docs/getting-started/install)
 2. Set up devpod provider of your choice
 ```bash
 devpod provider add docker
 ```
-3. Create a new repo based on this template repo
-4. Clone the repo locally
-5. From the repo root, run
+3. Clone the repo locally
+4. From the repo root, run
 ```bash
 devpod up . --dotfiles your-repo-here --ide none
 ```
