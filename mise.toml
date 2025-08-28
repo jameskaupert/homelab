@@ -1,5 +1,4 @@
 [tools]
-curl = "latest"
 k9s = "latest"
 
 [env]
