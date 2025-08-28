@@ -1,2 +1,5 @@
+[tools]
+curl = "latest"
+
 [env]
 _.file = ".envrc"

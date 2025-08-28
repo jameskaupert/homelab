@@ -1,2 +1,5 @@
 #!/bin/bash
 /usr/local/bin/mise trust $(pwd)/mise.toml && /usr/local/bin/mise install
+
+# Install Flux CLI
+curl -s https://fluxcd.io/install.sh | sudo bash
