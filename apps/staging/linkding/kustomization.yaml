@@ -4,4 +4,4 @@ namespace: linkding
 resources:
   - ../../base/linkding
   - cloudflare.yaml
-  - tunnel-credentials-2.yaml
+  - tunnel-credentials-3.yaml
