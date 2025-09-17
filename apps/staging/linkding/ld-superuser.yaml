@@ -1,0 +1,22 @@
+apiVersion: v1
+data:
+    LD_SUPERUSER_NAME: ENC[AES256_GCM,data:REHb+kkhuS4=,iv:spzf8cLVUSPUAlgF2G1PPxhdfD7uRIy1JuzoCWgpneY=,tag:yFonQHedNkdKJOrZdMyG/Q==,type:str]
+    LD_SUPERUSER_PASSWORD: ENC[AES256_GCM,data:/1AlgVjQ/Dt/yVjAyuHPgvFqEdAt1G3o,iv:7Fmk1LGhE+6kUTMrrdgpeEC/UUOALGXmJxhMNwtXd4E=,tag:eO5ylp96GhqeLVLBxNpaJg==,type:str]
+kind: Secret
+metadata:
+    name: ld-superuser
+sops:
+    age:
+        - recipient: age1gemn6ajnne5rf66zjsxqghd232hr72ekjzjs57kxfwjv884dmegs0ylcwp
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUZDFhQWl2eUJvL0ZuYndL
+            ZUZZWGlMby9yVXFTdXE0VmZWTVBqK2hXZkNRClh1TU50blBtNHZxK1I4ZitPSThH
+            K3htR1M4K1l1d0xlQlBpcW5xKzY0YjQKLS0tIG9xOEhGMWlreW1QU1Q3YXBoZ21U
+            WnU5SVpHWVMyRlBwZWx3NFRXa0dRNHMKyDPzptEckMOJaSaqmhw1z93TiZoHrtuf
+            MzuvWe6VH3QJbNOlwKnvmXh9chvFzmvkcwsM71UnXqmdDG0JqoXWfw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-09-17T23:51:15Z"
+    mac: ENC[AES256_GCM,data:yqoIkda3z6kMhirHorHBVTOVe5gmZyiZFeqIsQNbjbvLX8wcy3jHsXsQf6YKZuDACL9Vzkbnc3Bq9p25FUW37OLGXl6a5B6DGrafLM/2hf86IpgQVc0RG37VWgHWm+64Tw41PjR9A9CzfHQyyL4szORVcLgYuN9KNVUADU+kHKA=,iv:eQhgPrT+tZCu1vl6SN514Qpm9HEXENN6+rwBb7fBMWI=,tag:/3pvE+P0S2GSxuXNkJzdjQ==,type:str]
+    encrypted_regex: ^(data|stringData)$
+    version: 3.10.2
