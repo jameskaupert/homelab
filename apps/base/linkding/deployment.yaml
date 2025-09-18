@@ -23,8 +23,8 @@ spec:
           ports:
             - containerPort: 9090
           envFrom:
-            secretRef:
-              name: ld-superuser
+            - secretRef:
+                name: ld-superuser
           securityContext:
             allowPrivilegeEscalation: false
 
