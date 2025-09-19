@@ -1,4 +1,5 @@
 # homelab
+Kubernetes homelab running k3s on a Raspberry Pi.  My tinkering playground for exploring Kubernetes and running apps that improve my life.
 
 ## DevPods Devcontainer Setup
 I manage updates from within a devcontainer based on [devpod.sh](https://devpod.sh). Example setup below assumes you want to use something like Neovim from the CLI.
@@ -13,4 +14,5 @@ devpod provider add docker
 ```bash
 devpod up . --dotfiles your-repo-here --ide none
 ```
+
 
