@@ -2,11 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: linkding
-  namespace: linkding
 spec:
   ingressClassName: traefik
   rules:
-    - host: links.waltzbox.net
+    - host: lds.waltzbox.net
       http:
         paths:
           - backend:
