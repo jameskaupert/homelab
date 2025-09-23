@@ -36,4 +36,7 @@ spec:
         hosts:
           - grafana.waltzbox.net
         path: /
-        tls: []
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grafana.waltzbox.net
