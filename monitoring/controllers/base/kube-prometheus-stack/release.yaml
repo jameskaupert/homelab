@@ -32,6 +32,8 @@ spec:
 
       ingress:
         enabled: true
+        ingressClassName: traefik
         hosts:
           - grafana.waltzbox.net
         path: /
+        tls: []
