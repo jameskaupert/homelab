@@ -3,6 +3,9 @@
         "context": "..",
         "dockerfile": "Dockerfile"
     },
+    "mounts": [
+        "source=${localEnv:HOME}/.aia,target=/home/vscode/.aia,type=bind"
+    ],
     "containerEnv": {
         "DEVPOD": "1",
         "MISE_ENV": "devpod"
