@@ -1,17 +1,14 @@
 {
-    "build": {
-        "context": "..",
-        "dockerfile": "Dockerfile"
-    },
-    "mounts": [
-        "source=${localEnv:HOME}/.aia,target=/home/vscode/.aia,type=bind"
-    ],
-    "containerEnv": {
-        "DEVPOD": "1",
-        "MISE_ENV": "devpod"
-    },
-    "postCreateCommand": "scripts/setup",
-    "forwardPorts": [
-      8080
-    ]
+  "build": {
+    "context": "..",
+    "dockerfile": "Dockerfile"
+  },
+  "containerEnv": {
+    "DEVPOD": "1",
+    "MISE_ENV": "devpod"
+  },
+  "postCreateCommand": "scripts/setup",
+  "forwardPorts": [
+    8080
+  ]
 }
