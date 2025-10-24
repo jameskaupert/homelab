@@ -43,15 +43,7 @@ spec:
       initContainers:
         - name: mount-permission-fix
           image: busybox
-          command:
-            [
-              "bin/chown",
-              "1000:1000",
-              "/audiobooks",
-              "/podcasts",
-              "/config",
-              "/metadata",
-            ]
+          command: ["sh", "-c", "chown -R 1000:1000 /audiobooks /podcasts /config /metadata"]
           securityContext:
             runAsUser: 0
           volumeMounts:
