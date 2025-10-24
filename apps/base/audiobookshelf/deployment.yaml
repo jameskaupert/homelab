@@ -13,13 +13,6 @@ spec:
         app: audiobookshelf
 
     spec:
-      securityContext:
-        fsGroup: 1000 # node user is id 1000
-        runAsUser: 1000
-        runAsGroup: 1000
-
-      restartPolicy: Always
-
       containers:
         - name: audiobookshelf
           image: ghcr.io/advplyr/audiobookshelf:2.30.0
@@ -32,6 +25,11 @@ spec:
 
           securityContext:
             allowPrivilegeEscalation: false
+            fsGroup: 1000 # node user is id 1000
+            runAsUser: 1000
+            runAsGroup: 1000
+
+          restartPolicy: Always
 
           volumeMounts:
             - name: audiobookshelf-audiobooks
