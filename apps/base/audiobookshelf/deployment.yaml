@@ -13,10 +13,10 @@ spec:
         app: audiobookshelf
 
     spec:
-      # securityContext:
-        # fsGroup: 1000 # node user is id 1000
-        # runAsUser: 1000
-        # runAsGroup: 1000
+      securityContext:
+        fsGroup: 1000 # node user is id 1000
+        runAsUser: 1000
+        runAsGroup: 1000
 
       restartPolicy: Always
 
@@ -33,6 +33,19 @@ spec:
           securityContext:
             allowPrivilegeEscalation: false
 
+          volumeMounts:
+            - name: audiobookshelf-audiobooks
+              mountPath: /audiobooks
+            - name: audiobookshelf-podcasts
+              mountPath: /podcasts
+            - name: audiobookshelf-config
+              mountPath: /config
+            - name: audiobookshelf-metadata
+              mountPath: /metadata
+      initContainers:
+        - name: mount-permission-fix
+          image: busybox
+          command: ["/bin/chown", "1000", "/audiobooks", "/podcasts", "/config", "/metadata"]
           volumeMounts:
             - name: audiobookshelf-audiobooks
               mountPath: /audiobooks
