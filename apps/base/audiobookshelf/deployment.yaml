@@ -14,9 +14,7 @@ spec:
 
     spec:
       securityContext:
-        fsGroup: 1000 # node user is id 1000
-        runAsGroup: 1000
-        runAsUser: 1000
+        fsGroup: 1000
 
       containers:
         - name: audiobookshelf
@@ -29,6 +27,8 @@ spec:
                 name: audiobookshelf-configmap
 
           securityContext:
+            runAsGroup: 1000
+            runAsUser: 1000
             allowPrivilegeEscalation: false
 
           volumeMounts:
