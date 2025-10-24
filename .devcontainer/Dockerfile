@@ -8,6 +8,11 @@ RUN sudo apt-get update && \
     sudo apt-get update && \
     sudo apt-get install -y helm
 
+# Install SOPS
+RUN curl -LO https://github.com/getsops/sops/releases/download/v3.11.0/sops-v3.11.0.linux.amd64 && \
+    mv sops-v3.11.0.linux.amd64 /usr/local/bin/sops && \
+    chmod +x /usr/local/bin/sops
+
 
 COPY --from=jdxcode/mise /usr/local/bin/mise /usr/local/bin/
 
