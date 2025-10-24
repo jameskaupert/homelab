@@ -7,5 +7,9 @@
     "DEVPOD": "1",
     "MISE_ENV": "devpod"
   },
-  "postCreateCommand": "scripts/setup"
+  "postCreateCommand": "scripts/setup",
+  "forwardPorts": [
+    8080,
+    3005
+  ]
 }
