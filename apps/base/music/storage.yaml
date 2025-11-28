@@ -13,10 +13,22 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: navidrome-music-pvc
+  name: music-pvc
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 50Gi
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: filebrowser-config-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 500Mi
