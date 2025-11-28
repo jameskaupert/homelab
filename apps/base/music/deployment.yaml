@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: filebrowser
+  name: music
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: filebrowser
+      app: music
   template:
     metadata:
       labels:
-        app: filebrowser
+        app: music
 
     spec:
       securityContext:
@@ -19,6 +19,24 @@ spec:
         runAsUser: 1000
 
       containers:
+        - name: navidrome
+          image: deluan/navidrome:pr-4732
+          ports:
+            - containerPort: 4533
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: navidrome-configmap
+
+          securityContext:
+            allowPrivilegeEscalation: false
+
+          volumeMounts:
+            - name: navidrome-data
+              mountPath: /data
+            - name: music
+              mountPath: /music
+
         - name: filebrowser
           image: hurlenko/filebrowser:v2.49.0
           ports:
@@ -34,13 +52,16 @@ spec:
           volumeMounts:
             - name: filebrowser-config
               mountPath: /config
-            - name: navidrome-music
+            - name: music
               mountPath: /data
 
       volumes:
+        - name: navidrome-data
+          persistentVolumeClaim:
+            claimName: navidrome-data-pvc
+        - name: music
+          persistentVolumeClaim:
+            claimName: music-pvc
         - name: filebrowser-config
           persistentVolumeClaim:
             claimName: filebrowser-config-pvc
-        - name: navidrome-music
-          persistentVolumeClaim:
-            claimName: navidrome-music-pvc

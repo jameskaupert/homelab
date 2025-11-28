@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: navidrome-configmap
+  namespace: music
+data:
+  PORT: "4533"
+  TZ: "America/Chicago"
+  ND_LOGLEVEL: "debug"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: filebrowser-configmap
+  namespace: music
+data:
+  PORT: "8081"
+  TZ: "America/Chicago"
