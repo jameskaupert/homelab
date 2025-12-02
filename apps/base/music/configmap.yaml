@@ -17,3 +17,19 @@ metadata:
 data:
   PORT: "8081"
   TZ: "America/Chicago"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: feishin-configmap
+  namespace: music
+data:
+  PORT: "9180"
+  TZ: "America/Chicago"
+  PUID: "1000"
+  PGID: "1000"
+  SERVER_NAME: "pi"
+  SERVER_LOCK: "true"
+  SERVER_TYPE: "navidrome"
+  SERVER_URL: "http://localhost:4533"

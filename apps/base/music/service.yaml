@@ -22,3 +22,16 @@ spec:
     - port: 8081
       targetPort: 8081
   type: ClusterIP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: feishin
+spec:
+  selector:
+    app: music
+  ports:
+    - port: 9180
+      targetPort: 9180
+  type: ClusterIP
