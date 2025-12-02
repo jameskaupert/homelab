@@ -40,8 +40,8 @@ spec:
         - name: feishin
           image: ghcr.io/jeffvli/feishin:v0.22.0
           ports:
-            containerPort: 9180
-            protocol: TCP
+            - containerPort: 9180
+              protocol: TCP
           envFrom:
             - configMapRef:
                 name: feishin-configmap
