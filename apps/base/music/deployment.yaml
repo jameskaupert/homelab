@@ -38,7 +38,7 @@ spec:
               mountPath: /music
 
         - name: feishin
-          image: "ghcr.io/jeffvli/feishin:0.22.0"
+          image: ghcr.io/jeffvli/feishin:v0.22.0
           ports:
             containerPort: 9180
             protocol: TCP
