@@ -29,6 +29,7 @@ data:
   TZ: "America/Chicago"
   PUID: "1000"
   PGID: "1000"
+  UMASK: "002"
   SERVER_NAME: "pi"
   SERVER_LOCK: "true"
   SERVER_TYPE: "navidrome"
