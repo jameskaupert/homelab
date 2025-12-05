@@ -112,11 +112,6 @@ spec:
         app: feishin
 
     spec:
-      securityContext:
-        fsGroup: 1000
-        runAsGroup: 1000
-        runAsUser: 1000
-
       containers:
         - name: feishin
           image: ghcr.io/jeffvli/feishin:0.22.0

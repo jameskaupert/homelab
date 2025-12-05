@@ -31,3 +31,6 @@ data:
   SERVER_LOCK: "true"
   SERVER_TYPE: "navidrome"
   SERVER_URL: "http://localhost:4533"
+  PUID: "1000"
+  PGID: "1000"
+  UMASK: "002"
