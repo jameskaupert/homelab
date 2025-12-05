@@ -4,7 +4,7 @@ metadata:
   name: navidrome
 spec:
   selector:
-    app: music
+    app: navidrome
   ports:
     - port: 4533
       targetPort: 4533
@@ -17,7 +17,7 @@ metadata:
   name: filebrowser
 spec:
   selector:
-    app: music
+    app: filebrowser
   ports:
     - port: 8081
       targetPort: 8081
@@ -30,7 +30,7 @@ metadata:
   name: feishin
 spec:
   selector:
-    app: music
+    app: feishin
   ports:
     - port: 9180
       targetPort: 9180
