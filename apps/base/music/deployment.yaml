@@ -121,6 +121,3 @@ spec:
           envFrom:
             - configMapRef:
                 name: feishin-configmap
-
-          securityContext:
-            allowPrivilegeEscalation: false
