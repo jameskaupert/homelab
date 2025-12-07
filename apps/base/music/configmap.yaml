@@ -30,7 +30,7 @@ data:
   SERVER_NAME: "pi"
   SERVER_LOCK: "true"
   SERVER_TYPE: "navidrome"
-  SERVER_URL: "https://music-api.waltzbox.net:4533"
+  SERVER_URL: "https://music-api.waltzbox.net"
   PUID: "1000"
   PGID: "1000"
   UMASK: "002"
