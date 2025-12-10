@@ -28,6 +28,8 @@ spec:
           envFrom:
             - configMapRef:
                 name: navidrome-configmap
+            - secretRef:
+                name: nd-lastfm.yaml
 
           securityContext:
             allowPrivilegeEscalation: false

@@ -1,0 +1,22 @@
+apiVersion: v1
+data:
+    ND_LASTFM_APIKEY: ENC[AES256_GCM,data:c4BFZucekPFhFlOEoDZ9mu2ZTdMqgiz1jl7u287aEf08Wy0FQoSXPcZCFVs=,iv:11C8FoHH4T+9RqDCA9hilUARbpdKLwx8nKYuJCC6ejY=,tag:BkYyRWu27hqlMoUrczkc7g==,type:str]
+    ND_LASTFM_SECRET: ENC[AES256_GCM,data:1yh6/nKZz0wqZDG93Fys1u7j2nCBG7cbSqkNudiWJbQasNorFCXUgfzM8hQ=,iv:hyW3gvsJnL6sP0UILEkfpTcBHwGAuPTRS6ng06NhmIo=,tag:ZIhbiNGJgfjFPbXzE12lZA==,type:str]
+kind: Secret
+metadata:
+    name: nd-lastfm
+sops:
+    age:
+        - recipient: age1gemn6ajnne5rf66zjsxqghd232hr72ekjzjs57kxfwjv884dmegs0ylcwp
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBpWUxrNGVKcGQ0V2FTRitH
+            bDlTSUE3aEgxNWlZdmYzbEdHVG94V3FxZXhJCmdXN2N4TGdEMThQcHJDeWdhekNo
+            cDNpSzUxaWxaM1VxYnVGa3l1VDdpUFkKLS0tIFlXaVdKNGZKem50cEo2dFVvRWtH
+            VHRSSGlTWVZLekJSVkRiNVpWdldhcjAKPiiUOR3AfkGSup5Cu+x7wdjA6jOEUm+a
+            Aiqg8P5uCpFsLqw7Ou+mRV0yh0D9CeTQFJJgTGmae5kxHB1j/Brv+Q==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-12-10T01:39:57Z"
+    mac: ENC[AES256_GCM,data:xvgfaoz4eR06n24Iz9pP7ncFBINMqaJ+eihrmHM6gHZmNGLBI530fI/8/ewINktsCWwtQenv91xLfq8PMneERofZtv2XR+j7ZXPB3R97GaCbqVaz8vbeNBIxlgkjgDwDM9ugy2gzikosADnsWQNKQdZ4j5kEJ4eCm1hpwBlmwPM=,iv:9aBviKytw1XIX0dS5si/O0mMnV8Nt/n+k1o6La+5JBE=,tag:dyJc7/XJZl2qbsC8ooz4pA==,type:str]
+    encrypted_regex: ^(data|stringData)$
+    version: 3.11.0
