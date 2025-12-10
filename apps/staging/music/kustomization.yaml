@@ -5,3 +5,4 @@ resources:
   - ../../base/music
   - cloudflare.yaml
   - tunnel-credentials.yaml
+  - nd-lastfm.yaml
