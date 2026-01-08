@@ -15,4 +15,13 @@ devpod provider add docker
 devpod up . --dotfiles your-repo-here --ide none
 ```
 
+## Current Apps
+- Bookmark Management
+  - Linkding
+- Music
+  - Navidrome
+  - Feishin
+  - Filebrowser
+- Audiobooks
+  - Audiobookshelf
 
