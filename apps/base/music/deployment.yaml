@@ -116,7 +116,7 @@ spec:
     spec:
       containers:
         - name: feishin
-          image: ghcr.io/jeffvli/feishin:1.2.0
+          image: ghcr.io/jeffvli/feishin:1.3.0
           ports:
             - containerPort: 9180
               protocol: TCP
