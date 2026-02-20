@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+    APP_USERS: ENC[AES256_GCM,data:fqP9Far21nCm4Y0Nh+Pz5gstgU6l10KLGy53ehhhD9FoaQLcKwwu49fZiiO5bis3XqU+OCJp5MlfIOhd9FeI3zIqEEmVoo84ktiWMj47IVoxqgE63RgXrCwgRkc144QSRYGv/ZVlqskOZraWGZ1x1jM3ZhRygtDk+vUm4vIJKFwyAgcYwNVuOLI5M2Bqewk0ZKhlQDZtMIWQaFAqMchhkzwUBSsSR7LTxfYc0w==,iv:zQiB8odN4b36mOrE1ES9E6kt0hrHbJy0lac43kGwSPU=,tag:IDW/ZTwTFD9ugW0xy2hxog==,type:str]
+kind: Secret
+metadata:
+    name: trips-app-users
+sops:
+    age:
+        - recipient: age1zd5n9zx0dsdwdggjuvz32ppngn45gk0tcnwlwfs53ev7szefmdfqarudsl
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBCQStoMFRmZXZ5ZVNMYmRP
+            dWF0ZFJ2eGxtMG4xTkZ5Nkc0cm9WTERTbUVvClhKL09RdXVXREhEM2UrcE5XOG9u
+            WnE2OWZOS0N6a0daeHNOMlQzNkpITnMKLS0tICtiYUNPVDdQUURCcmVqOVJpK0tn
+            bTZyLzFhblZuOWltaXpDb2F1OWlDN0UKCvU7sDscyLq7P7Dr0t85SkFhHXbI4dvt
+            CLczs+ViFb0U69r7ru3wtgznpVojMiqfHbBdQIpOikmhcKfvYC4LAQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2026-02-20T17:58:26Z"
+    mac: ENC[AES256_GCM,data:iHszntFTxJlT5fJ7jS8YI4InYzLopz2SAy7sKmhSwoh1RVE8nrRbJG2hZv8gbnn8aNesPWuiqJyMpViexy3xH/j79cZ/vdcFf6Ikwu4FBi8jJEsgya/w7SNNUqDTBnjEaEHZAG6W+5ArRoMQe1Ole9PI+PlLIddZAXdj0TVQKSI=,iv:FErjdVna6c2CeVS6ZxQpvcmcOjUFg49w5k39o1tXYMQ=,tag:rZgoLk6KU86p0LwZzkbTlA==,type:str]
+    encrypted_regex: ^(data|stringData)$
+    version: 3.11.0
