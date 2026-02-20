@@ -6,3 +6,4 @@ resources:
   - cloudflare.yaml
   - tunnel-credentials.yaml
   - trips-app-users.yaml
+  - ghcr-secret.yaml
