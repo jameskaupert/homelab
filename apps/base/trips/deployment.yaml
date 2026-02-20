@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trips
+  namespace: trips
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trips
+  template:
+    metadata:
+      labels:
+        app: trips
+
+    spec:
+      imagePullSecrets:
+        - name: ghcr-secret
+
+      containers:
+        - name: trips
+          image: ghcr.io/jameskaupert/trip-planner:latest
+          ports:
+            - containerPort: 5173
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: trips-configmap
+            - secretRef:
+                name: trips-app-users
+
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 5173
+            initialDelaySeconds: 5
+            periodSeconds: 30
+
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 5173
+            initialDelaySeconds: 2
+            periodSeconds: 10
+
+          volumeMounts:
+            - name: trips-data
+              mountPath: /etc/trips/data
+
+      volumes:
+        - name: trips-data
+          persistentVolumeClaim:
+            claimName: trips-data-pvc
+
