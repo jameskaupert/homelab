@@ -4,8 +4,7 @@ metadata:
   name: trips
 spec:
   ports:
-    - port: 80
-      targetPort: 5173
+    - port: 5173
   selector:
     app: trips
   type: ClusterIP
