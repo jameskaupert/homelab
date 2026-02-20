@@ -2,6 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: trips-data-pvc
+  namespace: trips
 spec:
   accessModes:
     - ReadWriteOnce
