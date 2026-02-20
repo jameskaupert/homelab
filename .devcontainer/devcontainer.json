@@ -5,7 +5,8 @@
   },
   "containerEnv": {
     "DEVPOD": "1",
-    "MISE_ENV": "devpod"
+    "MISE_ENV": "devpod",
+    "WAYLAND_DISPLAY": "/tmp/wayland-0"
   },
   "postCreateCommand": "scripts/setup",
   "forwardPorts": [
