@@ -5,8 +5,13 @@ RUN sudo apt-get update && \
     sudo apt-get install -y curl gpg apt-transport-https && \
     curl -fsSL https://packages.buildkite.com/helm-linux/helm-debian/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null && \
     echo "deb [signed-by=/usr/share/keyrings/helm.gpg] https://packages.buildkite.com/helm-linux/helm-debian/any/ any main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list && \
-    sudo apt-get update && \
     sudo apt-get install -y helm
+
+    # Install clipboard utilities for OSC 52 integration
+    sudo apt-get install -y \
+    wl-clipboard \
+    xclip \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install SOPS
 RUN curl -LO https://github.com/getsops/sops/releases/download/v3.11.0/sops-v3.11.0.linux.amd64 && \
