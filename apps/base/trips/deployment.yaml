@@ -20,6 +20,7 @@ spec:
       containers:
         - name: trips
           image: ghcr.io/jameskaupert/trip-planner:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 5173
               protocol: TCP
