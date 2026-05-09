@@ -8,9 +8,5 @@
     "MISE_ENV": "devpod",
     "WAYLAND_DISPLAY": "/tmp/wayland-0"
   },
-  "postCreateCommand": "scripts/setup",
-  "forwardPorts": [
-    8080,
-    3005
-  ]
+  "postCreateCommand": "scripts/setup"
 }
