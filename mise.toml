@@ -1,5 +1,7 @@
 [tools]
 k9s = "latest"
+node = "latest"
+kubectl = "latest"
 
 [env]
 _.file = ".envrc"
