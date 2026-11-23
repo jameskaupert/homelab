@@ -4,5 +4,10 @@
     "fileMatch": [
       "\\.yaml$"
     ]
+  },
+  "flux": {
+		"managerFilePatterns": [
+			"/(?:^|/)gotk-components\\.ya?ml$/"
+		]
   }
 }
