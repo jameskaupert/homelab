@@ -3,7 +3,7 @@
   "kubernetes": {
     "managerFilePatterns": ["/\\.yaml$/"]
   },
-  "packageRules": ]
+  "packageRules": [ 
     {
       "description": "Flux controller images are updated via the flux2 PR",
       "matchManagers": ["kubernetes"],
