@@ -1,13 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "kubernetes": {
-    "fileMatch": [
-      "\\.yaml$"
-    ]
+    "managerFilePatterns": ["/\\.yaml$/"]
   },
-  "flux": {
-		"managerFilePatterns": [
-			"/(?:^|/)gotk-components\\.ya?ml$/"
-		]
-  }
+  "packageRules": ]
+    {
+      "description": "Flux controller images are updated via the flux2 PR",
+      "matchManagers": ["kubernetes"],
+      "matchFileNames": ["**/gotk-components.yaml"],
+      "enabled": false
+    }
+  ]
 }
