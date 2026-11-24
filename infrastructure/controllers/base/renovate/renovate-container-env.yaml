@@ -1,22 +1,21 @@
 apiVersion: v1
 data:
-    RENOVATE_TOKEN: ENC[AES256_GCM,data:OmmAy6ViAntuImoBOU8Dv69kMepbpOvhjHLIrBVbi1IKwYkH7Gh6pt2r+Y9ynXK81HlF/uJnxlka1r3qdazKD/bSjldf/wmz5izLPOLX//65CNbR6wUJ2AmxQb1fxw31llvkAfDp+HnI+go9YKU4vqwonqXBG1JEApvptQ==,iv:FC4OEa7/n6MnBcjR3Dn7Wr2APOILVrtzxsla/cD/Avc=,tag:jv6P7Z/4BZRElOZ/1BEsOg==,type:str]
+    RENOVATE_TOKEN: ENC[AES256_GCM,data:rVfQ+2mLVOhHLITHy8TXkVvFU7X9GafJvwN2qKmSCLZcLbYCyXUdEjXYZZfTyhKumz4ysOQFa1iXCM/biUw6+eBHjYkKAmHIWYzvf8hQxeaaWYQz+/vxne75C4C5+MvvV7WaHxj0vN0R3sEQlTcMwurrDyjoWiE84BQpoA==,iv:UYzQpvy9NXdmzckRHLKmDan3m3lbbGywsM81lqXsqx8=,tag:mJkSWj1iy07iK3KiZWSOOA==,type:str]
 kind: Secret
 metadata:
     name: renovate-container-env
-    namespace: renovate
 sops:
     age:
         - recipient: age1gemn6ajnne5rf66zjsxqghd232hr72ekjzjs57kxfwjv884dmegs0ylcwp
           enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA3eFlsL09sczhtUFhUK1k1
-            bUR4algyemtnalo3YU1oMG9jOXcwZk5ZTlV3CkZyWWx5Q21qWllIUkdzc0NNWTFx
-            NjR4b0Q5RS9qUjc1UUpiTkc4MnViVkkKLS0tIC9vLzVIUG95bzYrYnVBcmNrbFZi
-            TFhWT2dIaWZmOVd1cGtpMUlydkg2OHMKmJhzHvPL636skekRserKfDCHkFW6LT6+
-            3PNOXUFZzjT6ufHvIUSRzxxVNHnZqXfMJ/amwtgs6DRN6WMTSjKJwQ==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBQZzh5WnBZdHYyWkNDV25s
+            bmIrcjdNMitSMDUrOVF2Zm9TM2lob0h6clJJCjdXc3AzTWozb0w5T1E0Z1BpTDJk
+            NFhJYTcrTVZwYTRqVjRmSjMySnZpR0kKLS0tIFNWVTJXdzYyMnY2S3V2Uy9HRTUw
+            b1hEa3Q1RHl2c0VoYkNleG9qMmdoSncKfTz+PWbLlzFvdvnQf9kWXb/5odGEMwSD
+            ypJn/M6ceyF2UbseK2kGIzVKX0ozuGnKuMg5BhFha+hmx3oUR+pkSg==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2026-08-26T21:37:30Z"
-    mac: ENC[AES256_GCM,data:OuWzSioilUEIwcqp0Hux5Ps71asgbeh6VdOTd3j9m2VNe+ZXbLxA/ZLqAwK+a4zHzL/GCnPqDrFycDIXgkHOVZCW5pRbCH4sKncnNi/HCiMKFKsHXKyXY0R5I0oONVKPr+9JWJI04MP9ZyCdDdSJeIIMtD0KWPYxpoWUR64HE0Q=,iv:BGJHrYrLhkwrw0tlAKRryR57Erlf4XpnrcPrXzLkFQQ=,tag:9DphuDw3ovg94CoHpoXukA==,type:str]
+    lastmodified: "2026-11-24T15:25:10Z"
+    mac: ENC[AES256_GCM,data:tCMtgc7MTJzdB+Qedoj1tTnr/tfHFIjjGBjSJDy/ACv7SoReyFdUddA/3zcszjwJcCZmfJxkV0BKmXqUEbJNjCpmu+ojD0LXaHE/dvt2JlVGwYMLD3jY/UN5xZ9cinbUtiinVy8AGT5WcrMz4zSG/eCZuhwMV+P8mXVfWbXSYDw=,iv:YnMyaequXEJfvc0YK1cZck8UDWa0lD+25aRYVTNnGwg=,tag:bZVwYyqd9BhIjdxnFVKDPQ==,type:str]
     encrypted_regex: ^(data|stringData)$
     version: 3.11.0
