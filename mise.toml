@@ -2,6 +2,7 @@
 k9s = "latest"
 node = "latest"
 kubectl = "latest"
+vim = "latest"
 
 [env]
 _.file = ".envrc"
