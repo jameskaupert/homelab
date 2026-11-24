@@ -79,6 +79,12 @@ data:
     ingress:
     - hostname: audiobooks.waltzbox.net
       service: http://audiobookshelf.audiobookshelf.svc.cluster.local:3005
+    - hostname: links.waltzbox.net
+      service: http://linkding.linkding.svc.cluster.local:9090
+    - hostname: music.waltzbox.net
+      service: http://feishin.music.svc.cluster.local:9180
+    - hostname: music-api.waltzbox.net
+      service: http://navidrome.music.svc.cluster.local:4533
 
     # This rule matches any traffic which didn't match a previous rule, and responds with HTTP 404.
     - service: http_status:404
