@@ -6,6 +6,6 @@ metadata:
   namespace: flux-system
 spec:
   type: generic
-  address: http://ntfy-svc.ntfy.svc.cluster.local/test
+  address: http://ntfy-svc.ntfy.svc.cluster.local/flux-errors
   secretRef:
     name: flux-ntfy-headers
