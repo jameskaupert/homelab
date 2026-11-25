@@ -7,9 +7,6 @@ resources:
   - ntfy-svc.yaml
   - ntfy-pvc.yaml
   - ntfy-ingress.yaml
-  - ntfy-flux-provider.yaml
-  - ntfy-flux-alert.yaml
-  - ntfy-flux-failure-test.yaml
 configMapGenerator:
     - name: server-config
       files: 
