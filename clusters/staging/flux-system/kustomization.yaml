@@ -6,3 +6,5 @@ resources:
 - ntfy-flux-provider.yaml
 - ntfy-flux-alert.yaml
 - ntfy-flux-headers.yaml
+- does-not-exist-file.yaml
+
