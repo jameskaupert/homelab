@@ -1,0 +1,10 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1
+kind: Provider
+metadata:
+  name: flux-notification-provider
+  namespace: ntfy
+spec:
+  type: generic
+  channel: test
+  address: http://ntfy.waltzbox.net/test
