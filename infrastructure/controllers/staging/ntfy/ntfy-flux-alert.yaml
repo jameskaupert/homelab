@@ -4,9 +4,10 @@ metadata:
   name: flux-notification-alert
   namespace: ntfy
 spec:
-  summary: "Flux Reconciliation Failure"
   providerRef:
     name: flux-notification-provider
+  eventMetadata:
+    summary: "Flux Reconciliation Failure"
   eventSeverity: error
   eventSources:
     - kind: GitRepository
