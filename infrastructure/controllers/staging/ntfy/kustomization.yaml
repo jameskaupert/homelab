@@ -10,4 +10,4 @@ resources:
 configMapGenerator:
     - name: server-config
       files: 
-        - server.yml
+        - server.yaml
