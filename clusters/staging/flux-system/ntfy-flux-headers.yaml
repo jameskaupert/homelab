@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: flux-ntfy-headers
+  namespace: flux-system
+stringData:
+  headers: |
+    X-Title: Flux reconcile failed
+    X-Priority: "5"
