@@ -7,3 +7,5 @@ metadata:
 spec:
   type: generic
   address: http://ntfy-svc.ntfy.svc.cluster.local/test
+  secretRef:
+    name: flux-ntfy-headers
