@@ -2,7 +2,7 @@ apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:
   name: flux-notification-alert
-  namespace: ntfy
+  namespace: flux-system
 spec:
   providerRef:
     name: flux-notification-provider
