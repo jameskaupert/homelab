@@ -7,8 +7,8 @@ spec:
   providerRef:
     name: flux-notification-provider
   eventMetadata:
-    summary: "Flux Reconciliation Failure"
-  eventSeverity: error
+    summary: "Flux Reconciliation"
+  eventSeverity: info
   eventSources:
     - kind: GitRepository
       name: '*'
