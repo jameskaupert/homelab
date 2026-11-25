@@ -6,4 +6,4 @@ metadata:
   namespace: flux-system
 spec:
   type: generic
-  address: http://ntfy.waltzbox.net/test
+  address: http://ntfy-svc.ntfy.svc.cluster.local/test
